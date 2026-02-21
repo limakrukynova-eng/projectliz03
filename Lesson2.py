@@ -115,7 +115,7 @@ def first():
 
 first()
 print(f' global var_1 --> var_1 = {var_1}')
-"""
+
 
 
 
@@ -139,3 +139,16 @@ def first():
 
 first()
 print(f"global --> var_2 = {var_2}")
+"""
+
+
+
+
+
+#C++ ---> const int number = 9.81
+#python констант немає, але домовились якщо --> NAME - то це константа
+
+import config
+
+name = config.NAME
+print(name)
