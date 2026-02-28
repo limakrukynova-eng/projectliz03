@@ -34,6 +34,24 @@ def game_play(choice, result):
         print(f"Score,"
               f"\n\tplayer: {result['player']}"
               f"\n\tbot: {result['bot']}")
+    elif str.lower(choice) == "s" and bot_choice == "p":
+        result['player'] += 1
+        print("Result of game - PLAYER WINS")
+        print(f"Score,"
+              f"\n\tplayer: {result['player']}"
+              f"\n\tbot: {result['bot']}")
+    elif str.lower(choice) == "p" and bot_choice == "r":
+        result['player'] += 1
+        print("Result of game - PLAYER WINS")
+        print(f"Score,"
+              f"\n\tplayer: {result['player']}"
+              f"\n\tbot: {result['bot']}")
+    elif str.lower(choice) == "s" and bot_choice == "r":
+        result['bot'] += 1
+        print("Result of game - BOT WINS")
+        print(f"Score,"
+              f"\n\tplayer: {result['player']}"
+              f"\n\tbot: {result['bot']}")
 
 
 result = {"bot": 0,
